@@ -3,8 +3,15 @@
 величине элемент к заданному числу k и вывести его.
 """
 
-list_1 = [1, 2, 3, 4, 5]
-k = 6
+list_1 = [3.64, 5.2, 9.42, 9.35, 8.5, 8]
+k = 3
 
-for i in range(0, len(list_1)):
-    
+list_1.sort()
+closet_num = list_1[0]
+for i in list_1:
+    if abs(i - k) < abs(closet_num - k):
+        closet_num = i
+    if i > k:
+        break
+
+print(closet_num)

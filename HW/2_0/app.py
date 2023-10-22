@@ -5,13 +5,13 @@
 Выведите минимальное количество монет, которые нужно перевернуть
 '''
 
-s = "OPOOOOPO"
+coins = [0, 1, 0, 1, 1, 0]
 o = 0
 p = 0
 
 
-for i in range(len(s)):
-    if s[i] == "O":
+for i in range(len(coins)):
+    if coins[i] == 1:
         o += 1
     else:
         p += 1

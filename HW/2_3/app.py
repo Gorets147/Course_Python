@@ -3,16 +3,16 @@
 10 -> 1 2 4 8
 '''
 
-N = abs(int(input('Введите число N ')))
+n = abs(int(input('Введите число N ')))
 stop = 0
 P = 2
-for i in range(N):
+for i in range(n):
     if stop != 1:
         P = P ** i
-        if P <= N:
-            print(P, end=' ')
+        if P <= n:
+            print(P)
             P = 2
         else:
             stop = 1
     else:
-        i = N
+        i = n
